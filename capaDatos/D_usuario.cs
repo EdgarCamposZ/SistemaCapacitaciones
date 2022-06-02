@@ -26,5 +26,23 @@ namespace capaDatos
             da.Fill(dt);
             return dt;
         }
+
+        private ConexionBD Conexion = new ConexionBD();
+        private SqlCommand Comando = new SqlCommand();
+        private SqlDataReader LeerFilas;
+
+        public DataTable ListarIdEmpleado()
+        {
+            DataTable Tabla = new DataTable();
+            Comando.Connection = Conexion.AbrirConexion();
+            Comando.CommandText = "ListarIdEmpleado";
+            Comando.CommandType = CommandType.StoredProcedure;
+            LeerFilas = Comando.ExecuteReader();
+            Tabla.Load(LeerFilas);
+            LeerFilas.Close();
+            Conexion.AbrirConexion();
+            return Tabla;
+        }
     }
+    
 }

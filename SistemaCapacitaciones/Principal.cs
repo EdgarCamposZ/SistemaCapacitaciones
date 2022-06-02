@@ -97,7 +97,7 @@ namespace SistemaCapacitaciones
         private void iconButton1_Click(object sender, EventArgs e)
         {
             Activarboton(sender, Color.FromArgb(184, 197, 245));
-            //AbrirFormHijo(new FormDashboard();
+            AbrirFormHijo(new FormUsuario());
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
@@ -117,7 +117,7 @@ namespace SistemaCapacitaciones
 
         private void gunaPictureBox1_Click(object sender, EventArgs e)
         {
-            //formHijoActual.Close();
+            formHijoActual.Close();
             Reset();
         }
 
@@ -150,7 +150,7 @@ namespace SistemaCapacitaciones
         private void Principal_Load(object sender, EventArgs e)
         {
             //admin
-            if (Login.area == "A0001")
+            if (Login.area == "1")
 
             {
                 btnUsuarios.Enabled = true;
@@ -162,7 +162,7 @@ namespace SistemaCapacitaciones
             }
 
             //Misiones
-            else if (Login.area == "A0002")
+            else if (Login.area == "2")
 
             {
                 btnUsuarios.Enabled = false;
@@ -173,7 +173,7 @@ namespace SistemaCapacitaciones
                 lblcargo.Text = "Misiones";
             }
             //Capacitaciones
-            else if (Login.area == "A0003")
+            else if (Login.area == "3")
 
             {
                 btnUsuarios.Enabled = false;
@@ -196,9 +196,12 @@ namespace SistemaCapacitaciones
 
         private void iconButton1_Click_1(object sender, EventArgs e)
         {
-            Login frm2 = new Login();
-            frm2.Show();
             this.Hide();
+        }
+
+        private void lblnombre_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

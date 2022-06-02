@@ -30,8 +30,8 @@ namespace SistemaCapacitaciones
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.Menu = new Guna.UI.WinForms.GunaPanel();
+            this.btnCerrar = new FontAwesome.Sharp.IconButton();
             this.btnCapacitacion = new FontAwesome.Sharp.IconButton();
             this.btnMisiones = new FontAwesome.Sharp.IconButton();
             this.btnEmpleados = new FontAwesome.Sharp.IconButton();
@@ -39,17 +39,16 @@ namespace SistemaCapacitaciones
             this.logo = new Guna.UI.WinForms.GunaPanel();
             this.btnInicio = new Guna.UI.WinForms.GunaPictureBox();
             this.panelBarraT = new Guna.UI.WinForms.GunaPanel();
+            this.lblcargo = new System.Windows.Forms.Label();
+            this.lblnombre = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.iconFormActual = new FontAwesome.Sharp.IconPictureBox();
             this.PanelSombra = new Guna.UI.WinForms.GunaPanel();
             this.PanelEscritorio = new Guna.UI.WinForms.GunaPanel();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.lblnombre = new System.Windows.Forms.Label();
-            this.lblcargo = new System.Windows.Forms.Label();
-            this.lblHora = new System.Windows.Forms.Label();
             this.lblFecha = new System.Windows.Forms.Label();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnCerrar = new FontAwesome.Sharp.IconButton();
             this.Menu.SuspendLayout();
             this.logo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnInicio)).BeginInit();
@@ -73,6 +72,27 @@ namespace SistemaCapacitaciones
             this.Menu.Name = "Menu";
             this.Menu.Size = new System.Drawing.Size(203, 450);
             this.Menu.TabIndex = 0;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.ForeColor = System.Drawing.Color.White;
+            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
+            this.btnCerrar.IconColor = System.Drawing.Color.Lavender;
+            this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCerrar.Location = new System.Drawing.Point(0, 306);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.btnCerrar.Size = new System.Drawing.Size(203, 47);
+            this.btnCerrar.TabIndex = 5;
+            this.btnCerrar.Text = "Cerrar sesión";
+            this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCerrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.iconButton1_Click_1);
             // 
             // btnCapacitacion
             // 
@@ -170,10 +190,10 @@ namespace SistemaCapacitaciones
             // btnInicio
             // 
             this.btnInicio.BaseColor = System.Drawing.Color.White;
-            this.btnInicio.Image = ((System.Drawing.Image)(resources.GetObject("btnInicio.Image")));
+            this.btnInicio.Image = global::SistemaCapacitaciones.Properties.Resources.Logo;
             this.btnInicio.Location = new System.Drawing.Point(0, 0);
             this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(203, 140);
+            this.btnInicio.Size = new System.Drawing.Size(203, 129);
             this.btnInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnInicio.TabIndex = 0;
             this.btnInicio.TabStop = false;
@@ -192,6 +212,31 @@ namespace SistemaCapacitaciones
             this.panelBarraT.Size = new System.Drawing.Size(597, 75);
             this.panelBarraT.TabIndex = 1;
             this.panelBarraT.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraT_MouseDown);
+            // 
+            // lblcargo
+            // 
+            this.lblcargo.AutoSize = true;
+            this.lblcargo.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcargo.ForeColor = System.Drawing.Color.White;
+            this.lblcargo.Location = new System.Drawing.Point(429, 41);
+            this.lblcargo.Name = "lblcargo";
+            this.lblcargo.Size = new System.Drawing.Size(64, 24);
+            this.lblcargo.TabIndex = 3;
+            this.lblcargo.Text = "Cargo";
+            this.lblcargo.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblnombre
+            // 
+            this.lblnombre.AutoSize = true;
+            this.lblnombre.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnombre.ForeColor = System.Drawing.Color.White;
+            this.lblnombre.Location = new System.Drawing.Point(427, 9);
+            this.lblnombre.Name = "lblnombre";
+            this.lblnombre.Size = new System.Drawing.Size(82, 24);
+            this.lblnombre.TabIndex = 2;
+            this.lblnombre.Text = "Nombre";
+            this.lblnombre.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblnombre.Click += new System.EventHandler(this.lblnombre_Click);
             // 
             // lblTitulo
             // 
@@ -240,41 +285,16 @@ namespace SistemaCapacitaciones
             this.PanelEscritorio.TabIndex = 3;
             this.PanelEscritorio.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelEscritorio_Paint);
             // 
-            // gunaPictureBox1
+            // lblFecha
             // 
-            this.gunaPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(155, 65);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(314, 211);
-            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.gunaPictureBox1.TabIndex = 1;
-            this.gunaPictureBox1.TabStop = false;
-            // 
-            // lblnombre
-            // 
-            this.lblnombre.AutoSize = true;
-            this.lblnombre.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnombre.ForeColor = System.Drawing.Color.White;
-            this.lblnombre.Location = new System.Drawing.Point(427, 9);
-            this.lblnombre.Name = "lblnombre";
-            this.lblnombre.Size = new System.Drawing.Size(82, 24);
-            this.lblnombre.TabIndex = 2;
-            this.lblnombre.Text = "Nombre";
-            this.lblnombre.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // lblcargo
-            // 
-            this.lblcargo.AutoSize = true;
-            this.lblcargo.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcargo.ForeColor = System.Drawing.Color.White;
-            this.lblcargo.Location = new System.Drawing.Point(429, 41);
-            this.lblcargo.Name = "lblcargo";
-            this.lblcargo.Size = new System.Drawing.Size(64, 24);
-            this.lblcargo.TabIndex = 3;
-            this.lblcargo.Text = "Cargo";
-            this.lblcargo.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.ForeColor = System.Drawing.Color.White;
+            this.lblFecha.Location = new System.Drawing.Point(278, 314);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(62, 24);
+            this.lblFecha.TabIndex = 5;
+            this.lblFecha.Text = "Fecha";
             // 
             // lblHora
             // 
@@ -287,41 +307,21 @@ namespace SistemaCapacitaciones
             this.lblHora.TabIndex = 4;
             this.lblHora.Text = "Hora";
             // 
-            // lblFecha
+            // gunaPictureBox1
             // 
-            this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.ForeColor = System.Drawing.Color.White;
-            this.lblFecha.Location = new System.Drawing.Point(278, 314);
-            this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(62, 24);
-            this.lblFecha.TabIndex = 5;
-            this.lblFecha.Text = "Fecha";
+            this.gunaPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox1.Image = global::SistemaCapacitaciones.Properties.Resources.Logo;
+            this.gunaPictureBox1.Location = new System.Drawing.Point(155, 65);
+            this.gunaPictureBox1.Name = "gunaPictureBox1";
+            this.gunaPictureBox1.Size = new System.Drawing.Size(314, 211);
+            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.gunaPictureBox1.TabIndex = 1;
+            this.gunaPictureBox1.TabStop = false;
             // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCerrar.FlatAppearance.BorderSize = 0;
-            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCerrar.ForeColor = System.Drawing.Color.White;
-            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.DoorOpen;
-            this.btnCerrar.IconColor = System.Drawing.Color.Lavender;
-            this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCerrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.Location = new System.Drawing.Point(0, 306);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.btnCerrar.Size = new System.Drawing.Size(203, 47);
-            this.btnCerrar.TabIndex = 5;
-            this.btnCerrar.Text = "Cerrar sesión";
-            this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCerrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.iconButton1_Click_1);
             // 
             // Principal
             // 
