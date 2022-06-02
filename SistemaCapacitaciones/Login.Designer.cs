@@ -30,9 +30,9 @@ namespace SistemaCapacitaciones
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.Menu = new Guna.UI.WinForms.GunaPanel();
-            this.btnInicio = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.Menu = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnInicio = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.gunaLabel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUsuario = new System.Windows.Forms.TextBox();
@@ -60,7 +60,7 @@ namespace SistemaCapacitaciones
             // btnInicio
             // 
             this.btnInicio.BackColor = System.Drawing.Color.Transparent;
-            this.btnInicio.BaseColor = System.Drawing.Color.White;
+            this.btnInicio.BackColor = System.Drawing.Color.White;
             this.btnInicio.Image = global::SistemaCapacitaciones.Properties.Resources.Logo;
             this.btnInicio.Location = new System.Drawing.Point(0, 88);
             this.btnInicio.Name = "btnInicio";
@@ -198,9 +198,9 @@ namespace SistemaCapacitaciones
 
         #endregion
 
-        private Guna.UI.WinForms.GunaPanel Menu;
-        private Guna.UI.WinForms.GunaPictureBox btnInicio;
-        private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI2.WinForms.Guna2Panel Menu;
+        private Guna.UI2.WinForms.Guna2PictureBox btnInicio;
+        private Guna.UI2.WinForms.Guna2Panel gunaLabel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;

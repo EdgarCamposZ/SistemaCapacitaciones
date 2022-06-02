@@ -30,24 +30,24 @@ namespace SistemaCapacitaciones
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.Menu = new Guna.UI.WinForms.GunaPanel();
+            this.Menu = new Guna.UI2.WinForms.Guna2Panel();
             this.btnCerrar = new FontAwesome.Sharp.IconButton();
             this.btnCapacitacion = new FontAwesome.Sharp.IconButton();
             this.btnMisiones = new FontAwesome.Sharp.IconButton();
             this.btnEmpleados = new FontAwesome.Sharp.IconButton();
             this.btnUsuarios = new FontAwesome.Sharp.IconButton();
-            this.logo = new Guna.UI.WinForms.GunaPanel();
-            this.btnInicio = new Guna.UI.WinForms.GunaPictureBox();
-            this.panelBarraT = new Guna.UI.WinForms.GunaPanel();
+            this.logo = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnInicio = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.panelBarraT = new Guna.UI2.WinForms.Guna2Panel();
             this.lblcargo = new System.Windows.Forms.Label();
             this.lblnombre = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.iconFormActual = new FontAwesome.Sharp.IconPictureBox();
-            this.PanelSombra = new Guna.UI.WinForms.GunaPanel();
-            this.PanelEscritorio = new Guna.UI.WinForms.GunaPanel();
+            this.PanelSombra = new Guna.UI2.WinForms.Guna2Panel();
+            this.PanelEscritorio = new Guna.UI2.WinForms.Guna2Panel();
             this.lblFecha = new System.Windows.Forms.Label();
             this.lblHora = new System.Windows.Forms.Label();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
+            this.gunaPictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menu.SuspendLayout();
             this.logo.SuspendLayout();
@@ -189,7 +189,7 @@ namespace SistemaCapacitaciones
             // 
             // btnInicio
             // 
-            this.btnInicio.BaseColor = System.Drawing.Color.White;
+            this.btnInicio.BackColor = System.Drawing.Color.White;
             this.btnInicio.Image = global::SistemaCapacitaciones.Properties.Resources.Logo;
             this.btnInicio.Location = new System.Drawing.Point(0, 0);
             this.btnInicio.Name = "btnInicio";
@@ -310,7 +310,7 @@ namespace SistemaCapacitaciones
             // gunaPictureBox1
             // 
             this.gunaPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox1.BackColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Image = global::SistemaCapacitaciones.Properties.Resources.Logo;
             this.gunaPictureBox1.Location = new System.Drawing.Point(155, 65);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
@@ -351,19 +351,19 @@ namespace SistemaCapacitaciones
 
         #endregion
 
-        private Guna.UI.WinForms.GunaPanel Menu;
-        private Guna.UI.WinForms.GunaPanel logo;
+        private Guna.UI2.WinForms.Guna2Panel Menu;
+        private Guna.UI2.WinForms.Guna2Panel logo;
         private FontAwesome.Sharp.IconButton btnUsuarios;
         private FontAwesome.Sharp.IconButton btnCapacitacion;
         private FontAwesome.Sharp.IconButton btnMisiones;
         private FontAwesome.Sharp.IconButton btnEmpleados;
-        private Guna.UI.WinForms.GunaPictureBox btnInicio;
-        private Guna.UI.WinForms.GunaPanel panelBarraT;
+        private Guna.UI2.WinForms.Guna2PictureBox btnInicio;
+        private Guna.UI2.WinForms.Guna2Panel panelBarraT;
         private System.Windows.Forms.Label lblTitulo;
         private FontAwesome.Sharp.IconPictureBox iconFormActual;
-        private Guna.UI.WinForms.GunaPanel PanelSombra;
-        private Guna.UI.WinForms.GunaPanel PanelEscritorio;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
+        private Guna.UI2.WinForms.Guna2Panel PanelSombra;
+        private Guna.UI2.WinForms.Guna2Panel PanelEscritorio;
+        private Guna.UI2.WinForms.Guna2PictureBox gunaPictureBox1;
         private System.Windows.Forms.Label lblcargo;
         private System.Windows.Forms.Label lblnombre;
         private System.Windows.Forms.Label lblFecha;
