@@ -43,6 +43,31 @@ namespace capaDatos
             Conexion.AbrirConexion();
             return Tabla;
         }
+
+        public void AgregarUsuario(int IdEmpleado, string Usuario, string Pass)
+        {
+            Comando.Connection = Conexion.AbrirConexion();
+            Comando.CommandText = "AddUsuario";
+            Comando.CommandType = CommandType.StoredProcedure;
+            Comando.Parameters.AddWithValue("@IdEmpleado", IdEmpleado);
+            Comando.Parameters.AddWithValue("@Usuario", Usuario);
+            Comando.Parameters.AddWithValue("@Pass", Pass);
+            Comando.ExecuteNonQuery();
+            Comando.Parameters.Clear();
+        }
+
+        public DataTable ListarUsuario()
+        {
+            DataTable Tabla = new DataTable();
+            Comando.Connection = Conexion.AbrirConexion();
+            Comando.CommandText = "ListarUsuarios";
+            Comando.CommandType = CommandType.StoredProcedure;
+            LeerFilas = Comando.ExecuteReader();
+            Tabla.Load(LeerFilas);
+            LeerFilas.Close();
+            Conexion.AbrirConexion();
+            return Tabla;
+        }
     }
     
 }

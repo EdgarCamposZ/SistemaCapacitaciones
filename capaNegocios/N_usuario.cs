@@ -17,5 +17,6 @@ namespace capaNegocios
         {
             return objd.D_user(obje);
         }
+
     }
 }
