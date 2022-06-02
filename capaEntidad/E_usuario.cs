@@ -12,4 +12,12 @@ namespace capaEntidad
 
         public String clave { get; set; }
     }
+
+    public class AddUsuario
+    {
+        public int IdEmpleado { get; set; }
+        public string Usuario { get; set; }
+        public string Pass { get; set; }
+    }
+
 }

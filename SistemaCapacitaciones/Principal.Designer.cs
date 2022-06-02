@@ -70,7 +70,7 @@ namespace SistemaCapacitaciones
             this.Menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.Menu.Location = new System.Drawing.Point(0, 0);
             this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(203, 450);
+            this.Menu.Size = new System.Drawing.Size(203, 562);
             this.Menu.TabIndex = 0;
             // 
             // btnCerrar
@@ -209,7 +209,7 @@ namespace SistemaCapacitaciones
             this.panelBarraT.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBarraT.Location = new System.Drawing.Point(203, 0);
             this.panelBarraT.Name = "panelBarraT";
-            this.panelBarraT.Size = new System.Drawing.Size(597, 75);
+            this.panelBarraT.Size = new System.Drawing.Size(745, 75);
             this.panelBarraT.TabIndex = 1;
             this.panelBarraT.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraT_MouseDown);
             // 
@@ -218,7 +218,7 @@ namespace SistemaCapacitaciones
             this.lblcargo.AutoSize = true;
             this.lblcargo.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblcargo.ForeColor = System.Drawing.Color.White;
-            this.lblcargo.Location = new System.Drawing.Point(429, 41);
+            this.lblcargo.Location = new System.Drawing.Point(588, 41);
             this.lblcargo.Name = "lblcargo";
             this.lblcargo.Size = new System.Drawing.Size(64, 24);
             this.lblcargo.TabIndex = 3;
@@ -230,7 +230,7 @@ namespace SistemaCapacitaciones
             this.lblnombre.AutoSize = true;
             this.lblnombre.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblnombre.ForeColor = System.Drawing.Color.White;
-            this.lblnombre.Location = new System.Drawing.Point(427, 9);
+            this.lblnombre.Location = new System.Drawing.Point(579, 9);
             this.lblnombre.Name = "lblnombre";
             this.lblnombre.Size = new System.Drawing.Size(82, 24);
             this.lblnombre.TabIndex = 2;
@@ -269,7 +269,7 @@ namespace SistemaCapacitaciones
             this.PanelSombra.Dock = System.Windows.Forms.DockStyle.Top;
             this.PanelSombra.Location = new System.Drawing.Point(203, 75);
             this.PanelSombra.Name = "PanelSombra";
-            this.PanelSombra.Size = new System.Drawing.Size(597, 9);
+            this.PanelSombra.Size = new System.Drawing.Size(745, 9);
             this.PanelSombra.TabIndex = 2;
             // 
             // PanelEscritorio
@@ -281,16 +281,17 @@ namespace SistemaCapacitaciones
             this.PanelEscritorio.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PanelEscritorio.Location = new System.Drawing.Point(203, 84);
             this.PanelEscritorio.Name = "PanelEscritorio";
-            this.PanelEscritorio.Size = new System.Drawing.Size(597, 366);
+            this.PanelEscritorio.Size = new System.Drawing.Size(745, 478);
             this.PanelEscritorio.TabIndex = 3;
             this.PanelEscritorio.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelEscritorio_Paint);
             // 
             // lblFecha
             // 
+            this.lblFecha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblFecha.AutoSize = true;
             this.lblFecha.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFecha.ForeColor = System.Drawing.Color.White;
-            this.lblFecha.Location = new System.Drawing.Point(278, 314);
+            this.lblFecha.Location = new System.Drawing.Point(361, 386);
             this.lblFecha.Name = "lblFecha";
             this.lblFecha.Size = new System.Drawing.Size(62, 24);
             this.lblFecha.TabIndex = 5;
@@ -298,10 +299,11 @@ namespace SistemaCapacitaciones
             // 
             // lblHora
             // 
+            this.lblHora.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lblHora.AutoSize = true;
             this.lblHora.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHora.ForeColor = System.Drawing.Color.White;
-            this.lblHora.Location = new System.Drawing.Point(278, 290);
+            this.lblHora.Location = new System.Drawing.Point(361, 352);
             this.lblHora.Name = "lblHora";
             this.lblHora.Size = new System.Drawing.Size(56, 24);
             this.lblHora.TabIndex = 4;
@@ -312,7 +314,7 @@ namespace SistemaCapacitaciones
             this.gunaPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Image = global::SistemaCapacitaciones.Properties.Resources.Logo;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(155, 65);
+            this.gunaPictureBox1.Location = new System.Drawing.Point(229, 121);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
             this.gunaPictureBox1.Size = new System.Drawing.Size(314, 211);
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -327,7 +329,7 @@ namespace SistemaCapacitaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(948, 562);
             this.Controls.Add(this.PanelEscritorio);
             this.Controls.Add(this.PanelSombra);
             this.Controls.Add(this.panelBarraT);
