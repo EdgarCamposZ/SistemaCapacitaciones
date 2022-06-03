@@ -189,8 +189,9 @@ namespace SistemaCapacitaciones
             // 
             // btnInicio
             // 
-            this.btnInicio.BackColor = System.Drawing.Color.White;
+            this.btnInicio.BackColor = System.Drawing.Color.Transparent;
             this.btnInicio.Image = global::SistemaCapacitaciones.Properties.Resources.Logo;
+            this.btnInicio.ImageRotate = 0F;
             this.btnInicio.Location = new System.Drawing.Point(0, 0);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(203, 129);
@@ -312,8 +313,9 @@ namespace SistemaCapacitaciones
             // gunaPictureBox1
             // 
             this.gunaPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaPictureBox1.BackColor = System.Drawing.Color.White;
+            this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaPictureBox1.Image = global::SistemaCapacitaciones.Properties.Resources.Logo;
+            this.gunaPictureBox1.ImageRotate = 0F;
             this.gunaPictureBox1.Location = new System.Drawing.Point(229, 121);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
             this.gunaPictureBox1.Size = new System.Drawing.Size(314, 211);

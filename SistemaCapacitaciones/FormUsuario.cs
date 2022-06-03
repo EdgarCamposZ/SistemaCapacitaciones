@@ -14,6 +14,8 @@ namespace SistemaCapacitaciones
     public partial class FormUsuario : Form
     {
         D_usuario objUsuario = new D_usuario();
+        string Operacion = "Insertar";
+        string IdUsuario;
         public FormUsuario()
         {
             InitializeComponent();
@@ -55,9 +57,58 @@ namespace SistemaCapacitaciones
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-            objUsuario.AgregarUsuario(Convert.ToInt32(cmbIdEmpleado.SelectedValue),txtUsuario.Text,txtPass.Text);
-            MessageBox.Show("Insertado Correctamente");
+            if (Operacion == "Insertar")
+            {
+                objUsuario.AgregarUsuario(
+                    Convert.ToInt32(cmbIdEmpleado.SelectedValue),
+                    txtUsuario.Text,
+                    txtPass.Text);
+                MessageBox.Show("Insertado Correctamente");
+                Operacion = "Insertar";
+                txtUsuario.Clear();
+                txtPass.Clear();
+            }
+            else if(Operacion == "Editar")
+            {
+                objUsuario.EditarUsuario(Convert.ToInt32(IdUsuario),
+                    Convert.ToInt32(cmbIdEmpleado.SelectedValue),
+                    txtUsuario.Text,
+                    txtPass.Text);
+                MessageBox.Show("Se edito Correctamente");
+                Operacion = "Insertar";
+                txtUsuario.Clear();
+                txtPass.Clear();
+            }
             ListarUsuarios();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                Operacion = "Editar";
+                cmbIdEmpleado.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                txtUsuario.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                txtPass.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+                IdUsuario = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            }
+            else
+                MessageBox.Show("Debe seleccionar una fila"); 
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                objUsuario.EliminarUsuario(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
+                MessageBox.Show("Se elimino satisfactoriamente");
+                ListarUsuarios();
+                Operacion = "Insertar";
+                txtUsuario.Clear();
+                txtPass.Clear();
+            }
+            else
+                MessageBox.Show("Selecciones una fila");
         }
     }
 }
