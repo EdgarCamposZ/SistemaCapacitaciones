@@ -30,8 +30,9 @@ namespace SistemaCapacitaciones
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.Menu = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnInicio = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gunaLabel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,7 +43,7 @@ namespace SistemaCapacitaciones
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.Menu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnInicio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -50,24 +51,24 @@ namespace SistemaCapacitaciones
             // Menu
             // 
             this.Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(90)))), ((int)(((byte)(123)))));
-            this.Menu.Controls.Add(this.btnInicio);
+            this.Menu.Controls.Add(this.pictureBox1);
             this.Menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.Menu.Location = new System.Drawing.Point(0, 0);
             this.Menu.Name = "Menu";
             this.Menu.Size = new System.Drawing.Size(203, 392);
             this.Menu.TabIndex = 1;
             // 
-            // btnInicio
+            // pictureBox1
             // 
-            this.btnInicio.BackColor = System.Drawing.Color.Transparent;
-            this.btnInicio.BackColor = System.Drawing.Color.White;
-            this.btnInicio.Image = global::SistemaCapacitaciones.Properties.Resources.Logo;
-            this.btnInicio.Location = new System.Drawing.Point(0, 88);
-            this.btnInicio.Name = "btnInicio";
-            this.btnInicio.Size = new System.Drawing.Size(203, 213);
-            this.btnInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnInicio.TabIndex = 0;
-            this.btnInicio.TabStop = false;
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(203, 392);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // gunaLabel1
             // 
@@ -172,7 +173,7 @@ namespace SistemaCapacitaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(83)))), ((int)(((byte)(105)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(25)))), ((int)(((byte)(74)))));
             this.ClientSize = new System.Drawing.Size(683, 392);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtUsuario);
@@ -183,12 +184,13 @@ namespace SistemaCapacitaciones
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.Menu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Menu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnInicio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -199,7 +201,6 @@ namespace SistemaCapacitaciones
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel Menu;
-        private Guna.UI2.WinForms.Guna2PictureBox btnInicio;
         private Guna.UI2.WinForms.Guna2Panel gunaLabel1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -209,5 +210,6 @@ namespace SistemaCapacitaciones
         private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
