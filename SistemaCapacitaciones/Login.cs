@@ -90,5 +90,35 @@ namespace SistemaCapacitaciones
         {
 
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtPass_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2TextBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconPictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 //importamos lib FontAwesome.Sharp
 using FontAwesome.Sharp;
+using SistemaCapacitaciones.Forms;
 
 namespace SistemaCapacitaciones
 {
@@ -103,6 +104,7 @@ namespace SistemaCapacitaciones
         private void iconButton2_Click(object sender, EventArgs e)
         {
             Activarboton(sender, Color.FromArgb(233, 177, 240));
+            AbrirFormHijo(new FormEmpleado());
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
