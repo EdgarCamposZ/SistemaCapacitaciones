@@ -75,7 +75,7 @@ namespace SistemaCapacitaciones
             this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Key;
             this.iconPictureBox2.IconColor = System.Drawing.Color.AliceBlue;
             this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 36;
+            this.iconPictureBox2.IconSize = 45;
             this.iconPictureBox2.Location = new System.Drawing.Point(317, 206);
             this.iconPictureBox2.Name = "iconPictureBox2";
             this.iconPictureBox2.Size = new System.Drawing.Size(45, 45);
