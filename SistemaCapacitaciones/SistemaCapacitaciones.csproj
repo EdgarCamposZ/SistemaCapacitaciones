@@ -190,6 +190,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBCapacitacionesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBCapacitacionesDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +221,17 @@
     <Compile Include="FormUsuario.Designer.cs">
       <DependentUpon>FormUsuario.cs</DependentUpon>
     </Compile>
+    <None Include="DBCapacitacionesDataSet.xsc">
+      <DependentUpon>DBCapacitacionesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DBCapacitacionesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DBCapacitacionesDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DBCapacitacionesDataSet.xss">
+      <DependentUpon>DBCapacitacionesDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\Logo %282%29.png" />
     <Content Include="Resources\Logo2.png" />
     <EmbeddedResource Include="Forms\FormEmpleados.resx">
