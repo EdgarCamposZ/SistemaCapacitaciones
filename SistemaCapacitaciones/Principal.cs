@@ -205,10 +205,5 @@ namespace SistemaCapacitaciones
         {
 
         }
-
-        private void gunaPictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
