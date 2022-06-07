@@ -24,10 +24,25 @@ namespace SistemaCapacitaciones.Forms
 
         private void FormEmpleado_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'dBCapacitacionesDataSet.Empleado' Puede moverla o quitarla según sea necesario.
+            this.empleadoTableAdapter.Fill(this.dBCapacitacionesDataSet.Empleado);
 
         }
 
-        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        private void fillByToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.empleadoTableAdapter.FillBy(this.dBCapacitacionesDataSet.Empleado);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
