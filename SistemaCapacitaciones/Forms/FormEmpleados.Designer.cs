@@ -70,6 +70,7 @@
             this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.empleadoTableAdapter = new SistemaCapacitaciones.DBCapacitacionesDataSetTableAdapters.EmpleadoTableAdapter();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.guna2GroupBoxArea.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewEmpleado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.empleadoBindingSource)).BeginInit();
@@ -706,7 +707,8 @@
             // fillByToolStrip
             // 
             this.fillByToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fillByToolStripButton});
+            this.fillByToolStripButton,
+            this.toolStripLabel1});
             this.fillByToolStrip.Location = new System.Drawing.Point(0, 0);
             this.fillByToolStrip.Name = "fillByToolStrip";
             this.fillByToolStrip.Size = new System.Drawing.Size(923, 25);
@@ -732,6 +734,12 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(533, 18);
             this.guna2Panel1.TabIndex = 6;
+            // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(86, 22);
+            this.toolStripLabel1.Text = "toolStripLabel1";
             // 
             // FormEmpleado
             // 
@@ -802,5 +810,6 @@
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBoxRol;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel1;
     }
 }

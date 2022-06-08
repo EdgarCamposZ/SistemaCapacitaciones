@@ -20,6 +20,8 @@ namespace SistemaCapacitaciones.Forms
         private void guna2GroupBox1_Click(object sender, EventArgs e)
         {
 
+            //Prueba de git 
+
         }
 
         private void FormEmpleado_Load(object sender, EventArgs e)
