@@ -68,30 +68,6 @@ namespace capaDatos
             Conexion.AbrirConexion();
             return Tabla;
         }
-        public void EditarUsuario(int IdUsuario, int IdEmpleado, string Usuario, string Pass)
-        {
-            Comando.Connection = Conexion.AbrirConexion();
-            Comando.CommandText = "UpUsuario";
-            Comando.CommandType = CommandType.StoredProcedure;
-            Comando.Parameters.AddWithValue("@IdUsuario", IdUsuario);
-            Comando.Parameters.AddWithValue("@IdEmpleado", IdEmpleado);
-            Comando.Parameters.AddWithValue("@Usuario", Usuario);
-            Comando.Parameters.AddWithValue("@Pass", Pass);
-            Comando.ExecuteNonQuery();
-            Conexion.CerrarConexion();
-            Comando.Parameters.Clear();
-        }
-
-        public void EliminarUsuario(int IdUsuario)
-        {
-            Comando.Connection = Conexion.AbrirConexion();
-            Comando.CommandText = "KillUsuario";
-            Comando.CommandType = CommandType.StoredProcedure;
-            Comando.Parameters.AddWithValue("@IdUsuario", IdUsuario);
-            Comando.ExecuteNonQuery();
-            Conexion.CerrarConexion();
-            Comando.Parameters.Clear();
-        }
     }
     
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemaCapacitaciones.Vistas;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,65 +11,84 @@ using System.Windows.Forms;
 
 namespace SistemaCapacitaciones.Forms
 {
-    public partial class FormEmpleado : Form
+    public partial class FormEmpleado : Form, EmpleadoVista
     {
+        private string message;
+        private bool isSuccesful;
+        private bool isEdictar;
+
+        //Propiedades
+        public string Nombre { get { return txtNombre.Text; } set { txtNombre.Text = value; } }
+        public string Apellido { get { return txtApellido.Text; } set { txtApellido.Text = value; } }
+        public string Direccion { get { return txtDireccion.Text; } set { txtDireccion.Text = value; } }
+        public int FechaNacimiento { get { return Convert.ToInt32(txtNacimiento.Text); } set { txtNacimiento.Text = value.ToString(); } }
+        public int NumCelular { get { return Convert.ToInt32(txtCelular.Text); } set { txtCelular.Text = value.ToString(); } }
+        public int DUI { get { return Convert.ToInt32(txtDui.Text); } set { txtDui.Text = value.ToString(); } }
+        public int NIT { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        
+        public int IdEmpleado { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int IdArea { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public int IdCargo { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
+        
+        public string BuscarValue 
+        {
+            get { return txtBusqueda.Text; }
+            set { txtBusqueda.Text = value; }
+
+        }
+        public bool IsEdictar 
+        {
+            get { return isEdictar; }
+            set { isEdictar = value; }
+
+        }
+        public bool IsSuccesful 
+        {
+            get { return isSuccesful; }
+            set { isSuccesful = value; }
+        }
+        public string Message
+        {
+            get { return message; }
+            set { message = value; }
+        }
+        
         public FormEmpleado()
         {
             InitializeComponent();
+
+            AsociarEventosVistas();
+            guna2TabControl1.TabPages.Remove(tabPage2);
         }
 
-        private void guna2GroupBox1_Click(object sender, EventArgs e)
+        private void AsociarEventosVistas()
         {
-
-            //Prueba de git 
-
-        }
-
-        private void FormEmpleado_Load(object sender, EventArgs e)
-        {
-            // TODO: esta línea de código carga datos en la tabla 'dBCapacitacionesDataSet.Empleado' Puede moverla o quitarla según sea necesario.
-            this.empleadoTableAdapter.Fill(this.dBCapacitacionesDataSet.Empleado);
-
-        }
-
-        private void fillByToolStripButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.empleadoTableAdapter.FillBy(this.dBCapacitacionesDataSet.Empleado);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
+            bntBuscar.Click += delegate { BuscarEvebt?.Invoke(this, EventArgs.Empty); };
+            txtBusqueda.KeyDown += (s, e) => { 
+                if (e.KeyCode == Keys.Enter) 
+                    BuscarEvebt?.Invoke(this, EventArgs.Empty); };
 
         }
 
-        private void guna2DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        // falta implementar los eventos
+
+        //Eveto
+        public event EventHandler BuscarEvebt;
+        public event EventHandler NuevoEvent;
+        public event EventHandler EditarEvent;
+        public event EventHandler EliminarEvent;
+        public event EventHandler GuardarEvent;
+        public event EventHandler CancelarEvent;
+
+        
+
+       
+        //Metodos
+        public void setEmpleadoListBindingSource(BindingSource empleadoList)
         {
-
-        }
-
-        private void guna2Button3_Click(object sender, EventArgs e)
-        {
-            desmarcarCheck();
-        }
-
-        private void desmarcarCheck()
-        {
-            if (guna2CheckBoxFemenino.Checked)   
-            {
-                guna2CheckBoxFemenino.Checked = false;
-            }
-            if (guna2CheckBoxMasculino.Checked)
-            {
-                guna2CheckBoxMasculino.Checked = false;
-            }
-        }
-
-        private void guna2TextBoxNombre_TextChanged(object sender, EventArgs e)
-        {
-
+            guna2DataGridViewEmpleado.DataSource = empleadoList;
         }
     }
 }

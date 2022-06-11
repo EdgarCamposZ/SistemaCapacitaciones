@@ -205,5 +205,20 @@ namespace SistemaCapacitaciones
         {
 
         }
+
+        private void lblcargo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelBarraT_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void iconFormActual_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
