@@ -127,8 +127,9 @@ namespace SistemaCapacitaciones
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(75, 23);
             this.iconButton2.TabIndex = 8;
-            this.iconButton2.Text = "Actualizar";
+            this.iconButton2.Text = "Editar";
             this.iconButton2.UseVisualStyleBackColor = true;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
             // 
             // iconButton3
             // 
@@ -142,6 +143,7 @@ namespace SistemaCapacitaciones
             this.iconButton3.TabIndex = 9;
             this.iconButton3.Text = "Eliminar";
             this.iconButton3.UseVisualStyleBackColor = true;
+            this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
             // 
             // cmbIdEmpleado
             // 
@@ -169,7 +171,7 @@ namespace SistemaCapacitaciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(83)))), ((int)(((byte)(105)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
             this.ClientSize = new System.Drawing.Size(650, 402);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbIdEmpleado);
