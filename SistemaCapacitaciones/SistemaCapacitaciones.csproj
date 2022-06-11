@@ -198,11 +198,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DBCapacitacionesDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormEmpleados.cs">
+    <Compile Include="Forms\FormEmpleadoss.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormEmpleados.Designer.cs">
-      <DependentUpon>FormEmpleados.cs</DependentUpon>
+    <Compile Include="Forms\FormEmpleadoss.Designer.cs">
+      <DependentUpon>FormEmpleadoss.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -230,6 +230,7 @@
     <Compile Include="Repositorio\BaseRepository.cs" />
     <Compile Include="Repositorio\EmpleadoRepository.cs" />
     <Compile Include="Vistas\EmpleadoVista.cs" />
+    <Compile Include="Vistas\EmpleadoVista1.cs" />
     <None Include="DBCapacitacionesDataSet1.xsc">
       <DependentUpon>DBCapacitacionesDataSet1.xsd</DependentUpon>
     </None>
@@ -243,8 +244,8 @@
     </None>
     <None Include="Resources\Logo %282%29.png" />
     <Content Include="Resources\Logo2.png" />
-    <EmbeddedResource Include="Forms\FormEmpleados.resx">
-      <DependentUpon>FormEmpleados.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\FormEmpleadoss.resx">
+      <DependentUpon>FormEmpleadoss.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

@@ -5,11 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
+using System.Diagnostics;
 
 namespace SistemaCapacitaciones.Models
 {
-
-
+   
     public class Empleado
     {
 
@@ -110,14 +110,7 @@ namespace SistemaCapacitaciones.Models
         [Required(ErrorMessage = "El número de NIT es requerido")]
         [StringLength(10, MinimumLength = 10, ErrorMessage = "El número de NIT debe tener 10 dígitos")]
 
-
-
-
-
-
-
     }
 
 }
-
 

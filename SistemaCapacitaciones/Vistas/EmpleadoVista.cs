@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace SistemaCapacitaciones.Vistas
 {
-    public interface EmpleadoVista
+    public  interface EmpleadoVista
     {
 
         //Propiedades

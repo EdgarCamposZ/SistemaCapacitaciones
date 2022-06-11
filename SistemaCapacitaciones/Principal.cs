@@ -106,7 +106,7 @@ namespace SistemaCapacitaciones
             Activarboton(sender, Color.FromArgb(233, 177, 240));
             AbrirFormHijo(new FormEmpleado());
         }
-
+        
         private void iconButton3_Click(object sender, EventArgs e)
         {
             Activarboton(sender, Color.FromArgb(222, 166, 155));

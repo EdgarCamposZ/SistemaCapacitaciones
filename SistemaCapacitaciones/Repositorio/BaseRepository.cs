@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaCapacitaciones.Repositorio
 {
-    public abstract class BaseRepository
+    public  abstract  class BaseRepository
     {
         protected string connectionString;
     }
