@@ -10,7 +10,7 @@ namespace capaDatos
 {
     class ConexionBD
     {
-        static private string CadenaConexion = "Server=moises; Data Source=MOISES;Initial Catalog=DBCapacitaciones;Integrated Security=True";
+        static private string CadenaConexion = "Server=Laptop-E;;Initial Catalog=DBCapacitaciones;Integrated Security=True";
         private SqlConnection Conexion = new SqlConnection(CadenaConexion);
 
         public SqlConnection AbrirConexion()

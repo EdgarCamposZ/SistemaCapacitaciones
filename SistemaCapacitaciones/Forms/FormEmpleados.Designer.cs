@@ -68,9 +68,9 @@
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
             this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.empleadoTableAdapter = new SistemaCapacitaciones.DBCapacitacionesDataSetTableAdapters.EmpleadoTableAdapter();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.guna2GroupBoxArea.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridViewEmpleado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.empleadoBindingSource)).BeginInit();
@@ -109,7 +109,7 @@
             this.guna2GroupBoxArea.Controls.Add(this.guna2TextBoxNombre);
             this.guna2GroupBoxArea.CustomBorderColor = System.Drawing.Color.Transparent;
             this.guna2GroupBoxArea.FillColor = System.Drawing.Color.Transparent;
-            this.guna2GroupBoxArea.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2GroupBoxArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GroupBoxArea.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.guna2GroupBoxArea.Location = new System.Drawing.Point(41, 42);
             this.guna2GroupBoxArea.Name = "guna2GroupBoxArea";
@@ -130,12 +130,12 @@
             this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button3.ForeColor = System.Drawing.Color.White;
             this.guna2Button3.IndicateFocus = true;
             this.guna2Button3.Location = new System.Drawing.Point(101, 556);
             this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(90, 31);
+            this.guna2Button3.Size = new System.Drawing.Size(91, 30);
             this.guna2Button3.TabIndex = 9;
             this.guna2Button3.Text = "Guardar";
             this.guna2Button3.UseTransparentBackground = true;
@@ -144,11 +144,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.label6.Location = new System.Drawing.Point(194, 483);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 19);
+            this.label6.Size = new System.Drawing.Size(60, 20);
             this.label6.TabIndex = 21;
             this.label6.Text = "Estado";
             // 
@@ -163,7 +163,7 @@
             this.guna2ComboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.guna2ComboBox5.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2ComboBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox5.Font = new System.Drawing.Font("Roboto", 12F);
+            this.guna2ComboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.guna2ComboBox5.ForeColor = System.Drawing.Color.Black;
             this.guna2ComboBox5.ItemHeight = 30;
             this.guna2ComboBox5.Location = new System.Drawing.Point(14, 505);
@@ -177,11 +177,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.label7.Location = new System.Drawing.Point(10, 483);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(135, 19);
+            this.label7.Size = new System.Drawing.Size(137, 20);
             this.label7.TabIndex = 19;
             this.label7.Text = "Grado Academico";
             // 
@@ -195,7 +195,7 @@
             this.guna2ComboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.guna2ComboBox6.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2ComboBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox6.Font = new System.Drawing.Font("Roboto", 12F);
+            this.guna2ComboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.guna2ComboBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.guna2ComboBox6.ItemHeight = 30;
             this.guna2ComboBox6.Items.AddRange(new object[] {
@@ -223,11 +223,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.label5.Location = new System.Drawing.Point(33, 286);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 19);
+            this.label5.Size = new System.Drawing.Size(63, 20);
             this.label5.TabIndex = 17;
             this.label5.Text = "Genero";
             // 
@@ -246,7 +246,7 @@
             this.guna2TextBoxCorreo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxCorreo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxCorreo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxCorreo.Font = new System.Drawing.Font("Roboto", 12F);
+            this.guna2TextBoxCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.guna2TextBoxCorreo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBoxCorreo.Location = new System.Drawing.Point(14, 242);
             this.guna2TextBoxCorreo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -274,7 +274,7 @@
             this.guna2TextBoxTelefono.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxTelefono.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxTelefono.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxTelefono.Font = new System.Drawing.Font("Roboto", 12F);
+            this.guna2TextBoxTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.guna2TextBoxTelefono.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBoxTelefono.Location = new System.Drawing.Point(14, 194);
             this.guna2TextBoxTelefono.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -290,11 +290,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.label4.Location = new System.Drawing.Point(169, 408);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 19);
+            this.label4.Size = new System.Drawing.Size(112, 20);
             this.label4.TabIndex = 15;
             this.label4.Text = "Departamento";
             // 
@@ -309,7 +309,7 @@
             this.guna2ComboBoxCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.guna2ComboBoxCargo.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2ComboBoxCargo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBoxCargo.Font = new System.Drawing.Font("Roboto", 12F);
+            this.guna2ComboBoxCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.guna2ComboBoxCargo.ForeColor = System.Drawing.Color.Black;
             this.guna2ComboBoxCargo.ItemHeight = 30;
             this.guna2ComboBoxCargo.Location = new System.Drawing.Point(14, 430);
@@ -323,11 +323,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.label3.Location = new System.Drawing.Point(208, 340);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 19);
+            this.label3.Size = new System.Drawing.Size(33, 20);
             this.label3.TabIndex = 13;
             this.label3.Text = "Rol";
             // 
@@ -342,7 +342,7 @@
             this.guna2ComboBoxRol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.guna2ComboBoxRol.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2ComboBoxRol.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBoxRol.Font = new System.Drawing.Font("Roboto", 12F);
+            this.guna2ComboBoxRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.guna2ComboBoxRol.ForeColor = System.Drawing.Color.Black;
             this.guna2ComboBoxRol.ItemHeight = 30;
             this.guna2ComboBoxRol.Location = new System.Drawing.Point(158, 362);
@@ -356,22 +356,22 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.label2.Location = new System.Drawing.Point(50, 408);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 19);
+            this.label2.Size = new System.Drawing.Size(52, 20);
             this.label2.TabIndex = 11;
             this.label2.Text = "Cargo";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.label1.Location = new System.Drawing.Point(50, 340);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 19);
+            this.label1.Size = new System.Drawing.Size(43, 20);
             this.label1.TabIndex = 10;
             this.label1.Text = "Area";
             // 
@@ -386,7 +386,7 @@
             this.guna2ComboBoxArea.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.guna2ComboBoxArea.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2ComboBoxArea.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBoxArea.Font = new System.Drawing.Font("Roboto", 12F);
+            this.guna2ComboBoxArea.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.guna2ComboBoxArea.ForeColor = System.Drawing.Color.Black;
             this.guna2ComboBoxArea.ItemHeight = 30;
             this.guna2ComboBoxArea.Items.AddRange(new object[] {
@@ -406,11 +406,11 @@
             this.guna2CheckBoxFemenino.CheckedState.BorderRadius = 0;
             this.guna2CheckBoxFemenino.CheckedState.BorderThickness = 0;
             this.guna2CheckBoxFemenino.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBoxFemenino.Font = new System.Drawing.Font("Roboto", 9.75F);
+            this.guna2CheckBoxFemenino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.guna2CheckBoxFemenino.ForeColor = System.Drawing.Color.White;
             this.guna2CheckBoxFemenino.Location = new System.Drawing.Point(158, 309);
             this.guna2CheckBoxFemenino.Name = "guna2CheckBoxFemenino";
-            this.guna2CheckBoxFemenino.Size = new System.Drawing.Size(82, 19);
+            this.guna2CheckBoxFemenino.Size = new System.Drawing.Size(87, 20);
             this.guna2CheckBoxFemenino.TabIndex = 6;
             this.guna2CheckBoxFemenino.Text = "Femenino";
             this.guna2CheckBoxFemenino.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -428,7 +428,7 @@
             this.guna2ComboBoxDepartamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.guna2ComboBoxDepartamento.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2ComboBoxDepartamento.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBoxDepartamento.Font = new System.Drawing.Font("Roboto", 12F);
+            this.guna2ComboBoxDepartamento.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.guna2ComboBoxDepartamento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.guna2ComboBoxDepartamento.ItemHeight = 30;
             this.guna2ComboBoxDepartamento.Items.AddRange(new object[] {
@@ -461,11 +461,11 @@
             this.guna2CheckBoxMasculino.CheckedState.BorderRadius = 0;
             this.guna2CheckBoxMasculino.CheckedState.BorderThickness = 0;
             this.guna2CheckBoxMasculino.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2CheckBoxMasculino.Font = new System.Drawing.Font("Roboto", 9.75F);
+            this.guna2CheckBoxMasculino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.guna2CheckBoxMasculino.ForeColor = System.Drawing.Color.White;
             this.guna2CheckBoxMasculino.Location = new System.Drawing.Point(16, 309);
             this.guna2CheckBoxMasculino.Name = "guna2CheckBoxMasculino";
-            this.guna2CheckBoxMasculino.Size = new System.Drawing.Size(85, 19);
+            this.guna2CheckBoxMasculino.Size = new System.Drawing.Size(88, 20);
             this.guna2CheckBoxMasculino.TabIndex = 4;
             this.guna2CheckBoxMasculino.Text = "Masculino";
             this.guna2CheckBoxMasculino.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -488,7 +488,7 @@
             this.guna2TextBoxApellido.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxApellido.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxApellido.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxApellido.Font = new System.Drawing.Font("Roboto", 12F);
+            this.guna2TextBoxApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.guna2TextBoxApellido.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBoxApellido.Location = new System.Drawing.Point(14, 92);
             this.guna2TextBoxApellido.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -516,7 +516,7 @@
             this.guna2TextBoxDUI.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxDUI.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxDUI.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxDUI.Font = new System.Drawing.Font("Roboto", 12F);
+            this.guna2TextBoxDUI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.guna2TextBoxDUI.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBoxDUI.Location = new System.Drawing.Point(14, 146);
             this.guna2TextBoxDUI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -544,7 +544,7 @@
             this.guna2TextBoxNombre.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxNombre.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.guna2TextBoxNombre.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBoxNombre.Font = new System.Drawing.Font("Roboto", 12F);
+            this.guna2TextBoxNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.guna2TextBoxNombre.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBoxNombre.Location = new System.Drawing.Point(14, 38);
             this.guna2TextBoxNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -556,6 +556,7 @@
             this.guna2TextBoxNombre.Size = new System.Drawing.Size(280, 40);
             this.guna2TextBoxNombre.TabIndex = 0;
             this.guna2HtmlToolTip1.SetToolTip(this.guna2TextBoxNombre, "Escriba su Nombre");
+            this.guna2TextBoxNombre.TextChanged += new System.EventHandler(this.guna2TextBoxNombre_TextChanged);
             // 
             // guna2HtmlToolTip1
             // 
@@ -673,12 +674,12 @@
             this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Roboto", 12F);
+            this.guna2Button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
             this.guna2Button1.IndicateFocus = true;
             this.guna2Button1.Location = new System.Drawing.Point(368, 574);
             this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(82, 31);
+            this.guna2Button1.Size = new System.Drawing.Size(82, 30);
             this.guna2Button1.TabIndex = 2;
             this.guna2Button1.Text = "Edictar";
             this.guna2Button1.UseTransparentBackground = true;
@@ -694,12 +695,12 @@
             this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.Font = new System.Drawing.Font("Roboto", 12F);
+            this.guna2Button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.IndicateFocus = true;
             this.guna2Button2.Location = new System.Drawing.Point(456, 574);
             this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.Size = new System.Drawing.Size(90, 31);
+            this.guna2Button2.Size = new System.Drawing.Size(91, 30);
             this.guna2Button2.TabIndex = 3;
             this.guna2Button2.Text = "Eliminar";
             this.guna2Button2.UseTransparentBackground = true;
@@ -723,6 +724,12 @@
             this.fillByToolStripButton.Text = "FillBy";
             this.fillByToolStripButton.Click += new System.EventHandler(this.fillByToolStripButton_Click);
             // 
+            // toolStripLabel1
+            // 
+            this.toolStripLabel1.Name = "toolStripLabel1";
+            this.toolStripLabel1.Size = new System.Drawing.Size(86, 22);
+            this.toolStripLabel1.Text = "toolStripLabel1";
+            // 
             // empleadoTableAdapter
             // 
             this.empleadoTableAdapter.ClearBeforeFill = true;
@@ -734,12 +741,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(533, 18);
             this.guna2Panel1.TabIndex = 6;
-            // 
-            // toolStripLabel1
-            // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(86, 22);
-            this.toolStripLabel1.Text = "toolStripLabel1";
             // 
             // FormEmpleado
             // 

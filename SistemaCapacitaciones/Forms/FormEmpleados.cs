@@ -65,5 +65,10 @@ namespace SistemaCapacitaciones.Forms
                 guna2CheckBoxMasculino.Checked = false;
             }
         }
+
+        private void guna2TextBoxNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
