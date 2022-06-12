@@ -68,6 +68,8 @@ namespace capaDatos
             Conexion.AbrirConexion();
             return Tabla;
         }
+<<<<<<< HEAD
+=======
         public void EditarUsuario(int IdUsuario, int IdEmpleado, string Usuario, string Pass)
         {
             Comando.Connection = Conexion.AbrirConexion();
@@ -181,6 +183,7 @@ namespace capaDatos
             Conexion.CerrarConexion();
             Comando.Parameters.Clear();
         }
+>>>>>>> 0553250b907575677fe9dcd83a6b54471bb8895d
     }
     
 }

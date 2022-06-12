@@ -195,6 +195,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DBCapacitacionesDataSet.xsd</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+    <Compile Include="Forms\FormEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormEmpleado.Designer.cs">
+      <DependentUpon>FormEmpleado.cs</DependentUpon>
+=======
     <Compile Include="Forms\FormCapacitaciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -206,6 +213,7 @@
     </Compile>
     <Compile Include="Forms\FormEmpleados.Designer.cs">
       <DependentUpon>FormEmpleados.cs</DependentUpon>
+>>>>>>> 0553250b907575677fe9dcd83a6b54471bb8895d
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -227,8 +235,16 @@
     <Compile Include="Forms\FormUsuario.Designer.cs">
       <DependentUpon>FormUsuario.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+    <Compile Include="Repositorio\BaseRepository.cs" />
+    <Compile Include="Repositorio\EmpleadoRepository.cs" />
+    <Compile Include="Vistas\EmpleadoVista.cs" />
+    <None Include="DBCapacitacionesDataSet1.xsc">
+      <DependentUpon>DBCapacitacionesDataSet1.xsd</DependentUpon>
+=======
     <None Include="DBCapacitacionesDataSet.xsc">
       <DependentUpon>DBCapacitacionesDataSet.xsd</DependentUpon>
+>>>>>>> 0553250b907575677fe9dcd83a6b54471bb8895d
     </None>
     <None Include="DBCapacitacionesDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
@@ -240,11 +256,16 @@
     </None>
     <None Include="Resources\Logo %282%29.png" />
     <Content Include="Resources\Logo2.png" />
+<<<<<<< HEAD
+    <EmbeddedResource Include="Forms\FormEmpleado.resx">
+      <DependentUpon>FormEmpleado.cs</DependentUpon>
+=======
     <EmbeddedResource Include="Forms\FormCapacitaciones.resx">
       <DependentUpon>FormCapacitaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormEmpleados.resx">
       <DependentUpon>FormEmpleados.cs</DependentUpon>
+>>>>>>> 0553250b907575677fe9dcd83a6b54471bb8895d
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

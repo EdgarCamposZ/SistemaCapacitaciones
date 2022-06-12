@@ -20,31 +20,31 @@ namespace SistemaCapacitaciones.Forms
         //Propiedades
         public string Nombre { get { return txtNombre.Text; } set { txtNombre.Text = value; } }
         public string Apellido { get { return txtApellido.Text; } set { txtApellido.Text = value; } }
-        public string Direccion { get { return txtDireccion.Text; } set { txtDireccion.Text = value; } }
-        public int FechaNacimiento { get { return Convert.ToInt32(txtNacimiento.Text); } set { txtNacimiento.Text = value.ToString(); } }
+        public string Direccion { get { return ComboBoxDepartamento.Text; } set { ComboBoxDepartamento.Text = value; } }
+        public int FechaNacimiento { get { return Convert.ToInt32(txtNacimento.Text); } set { txtNacimento.Text = value.ToString(); } }
         public int NumCelular { get { return Convert.ToInt32(txtCelular.Text); } set { txtCelular.Text = value.ToString(); } }
-        public int DUI { get { return Convert.ToInt32(txtDui.Text); } set { txtDui.Text = value.ToString(); } }
+        public int DUI { get { return Convert.ToInt32(txtDUI.Text); } set { txtDUI.Text = value.ToString(); } }
         public int NIT { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        
+
         public int IdEmpleado { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public int IdArea { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public int IdCargo { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        
-        public string BuscarValue 
+
+        public string BuscarValue
         {
             get { return txtBusqueda.Text; }
             set { txtBusqueda.Text = value; }
 
         }
-        public bool IsEdictar 
+        public bool IsEdictar
         {
             get { return isEdictar; }
             set { isEdictar = value; }
 
         }
-        public bool IsSuccesful 
+        public bool IsSuccesful
         {
             get { return isSuccesful; }
             set { isSuccesful = value; }
@@ -54,21 +54,22 @@ namespace SistemaCapacitaciones.Forms
             get { return message; }
             set { message = value; }
         }
-        
+
         public FormEmpleado()
         {
             InitializeComponent();
 
             AsociarEventosVistas();
-            guna2TabControl1.TabPages.Remove(tabPage2);
+            TabControl2.TabPages.Remove(tabPage2);
         }
 
         private void AsociarEventosVistas()
         {
-            bntBuscar.Click += delegate { BuscarEvebt?.Invoke(this, EventArgs.Empty); };
-            txtBusqueda.KeyDown += (s, e) => { 
-                if (e.KeyCode == Keys.Enter) 
-                    BuscarEvebt?.Invoke(this, EventArgs.Empty); };
+            bntBusqueda.Click += delegate { BuscarEvebt?.Invoke(this, EventArgs.Empty); };
+            txtBusqueda.KeyDown += (s, e) => {
+                if (e.KeyCode == Keys.Enter)
+                    BuscarEvebt?.Invoke(this, EventArgs.Empty);
+            };
 
         }
 
@@ -82,13 +83,13 @@ namespace SistemaCapacitaciones.Forms
         public event EventHandler GuardarEvent;
         public event EventHandler CancelarEvent;
 
-        
 
-       
+
+
         //Metodos
         public void setEmpleadoListBindingSource(BindingSource empleadoList)
         {
-            guna2DataGridViewEmpleado.DataSource = empleadoList;
+           guna2DataGridView1.DataSource = empleadoList;
         }
     }
 }

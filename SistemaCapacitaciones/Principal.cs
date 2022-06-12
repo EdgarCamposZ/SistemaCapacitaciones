@@ -104,7 +104,7 @@ namespace SistemaCapacitaciones
         private void iconButton2_Click(object sender, EventArgs e)
         {
             Activarboton(sender, Color.FromArgb(233, 177, 240));
-            AbrirFormHijo(new FormEmpleado());
+            AbrirFormHijo(new FormEmpleadoss());
         }
 
         private void iconButton3_Click(object sender, EventArgs e)
@@ -115,7 +115,6 @@ namespace SistemaCapacitaciones
         private void iconButton4_Click(object sender, EventArgs e)
         {
             Activarboton(sender, Color.FromArgb(27, 181, 242));
-            AbrirFormHijo(new FormCapacitaciones());
         }
 
         private void gunaPictureBox1_Click(object sender, EventArgs e)
