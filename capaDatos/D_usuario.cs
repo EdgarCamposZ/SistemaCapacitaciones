@@ -92,6 +92,64 @@ namespace capaDatos
             Conexion.CerrarConexion();
             Comando.Parameters.Clear();
         }
+
+        public DataTable ListarFinanciacion()
+        {
+            DataTable Tabla = new DataTable();
+            Comando.Connection = Conexion.AbrirConexion();
+            Comando.CommandText = "ListarFinanciacion";
+            Comando.CommandType = CommandType.StoredProcedure;
+            LeerFilas = Comando.ExecuteReader();
+            Tabla.Load(LeerFilas);
+            LeerFilas.Close();
+            Conexion.AbrirConexion();
+            return Tabla;
+        }
+
+        public DataTable ListarModalidad()
+        {
+            DataTable Tabla = new DataTable();
+            Comando.Connection = Conexion.AbrirConexion();
+            Comando.CommandText = "ListarModalidad";
+            Comando.CommandType = CommandType.StoredProcedure;
+            LeerFilas = Comando.ExecuteReader();
+            Tabla.Load(LeerFilas);
+            LeerFilas.Close();
+            Conexion.AbrirConexion();
+            return Tabla;
+        }
+
+        public void AgregarCapacitacion(int IdUsuario, int IdFinanciacion, int IdModalidad, string Capacitacion, string Descripcion, string EnteFormador, string Estado, string FechaInicio, string FechaFinal, string CantHoras)
+        {
+            Comando.Connection = Conexion.AbrirConexion();
+            Comando.CommandText = "AddCapacitacion";
+            Comando.CommandType = CommandType.StoredProcedure;
+            Comando.Parameters.AddWithValue("@IdUsuario", IdUsuario);
+            Comando.Parameters.AddWithValue("@IdFinanciacion", IdFinanciacion);
+            Comando.Parameters.AddWithValue("@IdModalidad", IdModalidad);
+            Comando.Parameters.AddWithValue("@Capacitacion", Capacitacion);
+            Comando.Parameters.AddWithValue("@Descripcion", Descripcion);
+            Comando.Parameters.AddWithValue("@EnteFormador", EnteFormador);
+            Comando.Parameters.AddWithValue("@Estado", Estado);
+            Comando.Parameters.AddWithValue("@FechaInicio", FechaInicio);
+            Comando.Parameters.AddWithValue("@FechaFinal", FechaFinal);
+            Comando.Parameters.AddWithValue("@CantHoras", CantHoras);
+            Comando.ExecuteNonQuery();
+            Comando.Parameters.Clear();
+        }
+
+        public DataTable ListarCapacitaciones()
+        {
+            DataTable Tabla = new DataTable();
+            Comando.Connection = Conexion.AbrirConexion();
+            Comando.CommandText = "ListarCapacitaciones";
+            Comando.CommandType = CommandType.StoredProcedure;
+            LeerFilas = Comando.ExecuteReader();
+            Tabla.Load(LeerFilas);
+            LeerFilas.Close();
+            Conexion.AbrirConexion();
+            return Tabla;
+        }
     }
     
 }

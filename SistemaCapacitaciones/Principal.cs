@@ -115,6 +115,7 @@ namespace SistemaCapacitaciones
         private void iconButton4_Click(object sender, EventArgs e)
         {
             Activarboton(sender, Color.FromArgb(27, 181, 242));
+            AbrirFormHijo(new FormCapacitaciones());
         }
 
         private void gunaPictureBox1_Click(object sender, EventArgs e)

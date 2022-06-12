@@ -30,16 +30,16 @@ namespace SistemaCapacitaciones.Forms
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.cmbIdUsuario = new System.Windows.Forms.ComboBox();
+            this.cmbIdFinanciacion = new System.Windows.Forms.ComboBox();
+            this.cmbIdModalidad = new System.Windows.Forms.ComboBox();
+            this.txtCapacitacion = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.txtEnte = new System.Windows.Forms.TextBox();
+            this.txtEstado = new System.Windows.Forms.TextBox();
+            this.dtInicio = new System.Windows.Forms.DateTimePicker();
+            this.dtFinal = new System.Windows.Forms.DateTimePicker();
+            this.txtHoras = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -58,117 +58,132 @@ namespace SistemaCapacitaciones.Forms
             // 
             // dataGridView1
             // 
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 119);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(633, 319);
+            this.dataGridView1.Size = new System.Drawing.Size(670, 319);
             this.dataGridView1.TabIndex = 0;
             // 
-            // comboBox1
+            // cmbIdUsuario
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 31);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 1;
+            this.cmbIdUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbIdUsuario.FormattingEnabled = true;
+            this.cmbIdUsuario.Location = new System.Drawing.Point(12, 31);
+            this.cmbIdUsuario.Name = "cmbIdUsuario";
+            this.cmbIdUsuario.Size = new System.Drawing.Size(100, 21);
+            this.cmbIdUsuario.TabIndex = 1;
             // 
-            // comboBox2
+            // cmbIdFinanciacion
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(121, 30);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 21);
-            this.comboBox2.TabIndex = 2;
+            this.cmbIdFinanciacion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbIdFinanciacion.FormattingEnabled = true;
+            this.cmbIdFinanciacion.Location = new System.Drawing.Point(121, 30);
+            this.cmbIdFinanciacion.Name = "cmbIdFinanciacion";
+            this.cmbIdFinanciacion.Size = new System.Drawing.Size(100, 21);
+            this.cmbIdFinanciacion.TabIndex = 2;
             // 
-            // comboBox3
+            // cmbIdModalidad
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(245, 31);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(99, 21);
-            this.comboBox3.TabIndex = 3;
+            this.cmbIdModalidad.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cmbIdModalidad.FormattingEnabled = true;
+            this.cmbIdModalidad.Location = new System.Drawing.Point(245, 31);
+            this.cmbIdModalidad.Name = "cmbIdModalidad";
+            this.cmbIdModalidad.Size = new System.Drawing.Size(99, 21);
+            this.cmbIdModalidad.TabIndex = 3;
             // 
-            // textBox1
+            // txtCapacitacion
             // 
-            this.textBox1.Location = new System.Drawing.Point(366, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(138, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtCapacitacion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCapacitacion.Location = new System.Drawing.Point(366, 30);
+            this.txtCapacitacion.Name = "txtCapacitacion";
+            this.txtCapacitacion.Size = new System.Drawing.Size(138, 20);
+            this.txtCapacitacion.TabIndex = 4;
             // 
-            // textBox2
+            // txtDescripcion
             // 
-            this.textBox2.Location = new System.Drawing.Point(529, 32);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(116, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtDescripcion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDescripcion.Location = new System.Drawing.Point(529, 32);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(116, 20);
+            this.txtDescripcion.TabIndex = 5;
             // 
-            // textBox3
+            // txtEnte
             // 
-            this.textBox3.Location = new System.Drawing.Point(667, 31);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(121, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtEnte.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEnte.Location = new System.Drawing.Point(667, 31);
+            this.txtEnte.Name = "txtEnte";
+            this.txtEnte.Size = new System.Drawing.Size(121, 20);
+            this.txtEnte.TabIndex = 6;
             // 
-            // textBox4
+            // txtEstado
             // 
-            this.textBox4.Location = new System.Drawing.Point(15, 90);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 7;
+            this.txtEstado.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtEstado.Location = new System.Drawing.Point(15, 90);
+            this.txtEstado.Name = "txtEstado";
+            this.txtEstado.Size = new System.Drawing.Size(100, 20);
+            this.txtEstado.TabIndex = 7;
             // 
-            // dateTimePicker1
+            // dtInicio
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(135, 90);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker1.TabIndex = 8;
+            this.dtInicio.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtInicio.Location = new System.Drawing.Point(135, 90);
+            this.dtInicio.Name = "dtInicio";
+            this.dtInicio.Size = new System.Drawing.Size(200, 20);
+            this.dtInicio.TabIndex = 8;
             // 
-            // dateTimePicker2
+            // dtFinal
             // 
-            this.dateTimePicker2.Location = new System.Drawing.Point(366, 90);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
-            this.dateTimePicker2.TabIndex = 9;
+            this.dtFinal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dtFinal.Location = new System.Drawing.Point(366, 90);
+            this.dtFinal.Name = "dtFinal";
+            this.dtFinal.Size = new System.Drawing.Size(200, 20);
+            this.dtFinal.TabIndex = 9;
             // 
-            // textBox5
+            // txtHoras
             // 
-            this.textBox5.Location = new System.Drawing.Point(592, 93);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(90, 20);
-            this.textBox5.TabIndex = 10;
+            this.txtHoras.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtHoras.Location = new System.Drawing.Point(592, 93);
+            this.txtHoras.Name = "txtHoras";
+            this.txtHoras.Size = new System.Drawing.Size(90, 20);
+            this.txtHoras.TabIndex = 10;
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(12, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 11;
-            this.label1.Text = "IdUsuario";
+            this.label1.Text = "Usuario";
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(121, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 13);
+            this.label2.Size = new System.Drawing.Size(67, 13);
             this.label2.TabIndex = 12;
-            this.label2.Text = "IdFinanciacion";
+            this.label2.Text = "Financiacion";
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(242, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 13);
+            this.label3.Size = new System.Drawing.Size(56, 13);
             this.label3.TabIndex = 13;
-            this.label3.Text = "IdModalidad";
+            this.label3.Text = "Modalidad";
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(363, 12);
@@ -179,6 +194,7 @@ namespace SistemaCapacitaciones.Forms
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(526, 12);
@@ -189,6 +205,7 @@ namespace SistemaCapacitaciones.Forms
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(667, 15);
@@ -199,6 +216,7 @@ namespace SistemaCapacitaciones.Forms
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(12, 74);
@@ -209,6 +227,7 @@ namespace SistemaCapacitaciones.Forms
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(132, 74);
@@ -219,6 +238,7 @@ namespace SistemaCapacitaciones.Forms
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(366, 74);
@@ -229,6 +249,7 @@ namespace SistemaCapacitaciones.Forms
             // 
             // label10
             // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label10.AutoSize = true;
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(589, 74);
@@ -239,15 +260,18 @@ namespace SistemaCapacitaciones.Forms
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.Location = new System.Drawing.Point(714, 157);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 21;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button2.Location = new System.Drawing.Point(713, 211);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
@@ -257,6 +281,7 @@ namespace SistemaCapacitaciones.Forms
             // 
             // button3
             // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button3.Location = new System.Drawing.Point(714, 260);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
@@ -283,19 +308,20 @@ namespace SistemaCapacitaciones.Forms
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.dateTimePicker2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.txtHoras);
+            this.Controls.Add(this.dtFinal);
+            this.Controls.Add(this.dtInicio);
+            this.Controls.Add(this.txtEstado);
+            this.Controls.Add(this.txtEnte);
+            this.Controls.Add(this.txtDescripcion);
+            this.Controls.Add(this.txtCapacitacion);
+            this.Controls.Add(this.cmbIdModalidad);
+            this.Controls.Add(this.cmbIdFinanciacion);
+            this.Controls.Add(this.cmbIdUsuario);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormCapacitaciones";
             this.Text = "FormCapacitaciones";
+            this.Load += new System.EventHandler(this.FormCapacitaciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -305,16 +331,16 @@ namespace SistemaCapacitaciones.Forms
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.ComboBox cmbIdUsuario;
+        private System.Windows.Forms.ComboBox cmbIdFinanciacion;
+        private System.Windows.Forms.ComboBox cmbIdModalidad;
+        private System.Windows.Forms.TextBox txtCapacitacion;
+        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.TextBox txtEnte;
+        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.DateTimePicker dtInicio;
+        private System.Windows.Forms.DateTimePicker dtFinal;
+        private System.Windows.Forms.TextBox txtHoras;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

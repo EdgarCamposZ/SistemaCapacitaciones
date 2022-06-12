@@ -32,31 +32,31 @@ namespace SistemaCapacitaciones
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.Menu = new Guna.UI2.WinForms.Guna2Panel();
-            this.logo = new Guna.UI2.WinForms.Guna2Panel();
-            this.panelBarraT = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblcargo = new System.Windows.Forms.Label();
-            this.lblnombre = new System.Windows.Forms.Label();
-            this.lblTitulo = new System.Windows.Forms.Label();
-            this.PanelSombra = new Guna.UI2.WinForms.Guna2Panel();
-            this.PanelEscritorio = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblFecha = new System.Windows.Forms.Label();
-            this.lblHora = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.gunaPictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.iconFormActual = new FontAwesome.Sharp.IconPictureBox();
             this.btnCerrar = new FontAwesome.Sharp.IconButton();
             this.btnCapacitacion = new FontAwesome.Sharp.IconButton();
             this.btnMisiones = new FontAwesome.Sharp.IconButton();
             this.btnEmpleados = new FontAwesome.Sharp.IconButton();
             this.btnUsuarios = new FontAwesome.Sharp.IconButton();
+            this.logo = new Guna.UI2.WinForms.Guna2Panel();
             this.btnInicio = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.panelBarraT = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblcargo = new System.Windows.Forms.Label();
+            this.lblnombre = new System.Windows.Forms.Label();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.iconFormActual = new FontAwesome.Sharp.IconPictureBox();
+            this.PanelSombra = new Guna.UI2.WinForms.Guna2Panel();
+            this.PanelEscritorio = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.gunaPictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Menu.SuspendLayout();
             this.logo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnInicio)).BeginInit();
             this.panelBarraT.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconFormActual)).BeginInit();
             this.PanelEscritorio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconFormActual)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnInicio)).BeginInit();
             this.SuspendLayout();
             // 
             // Menu
@@ -71,143 +71,8 @@ namespace SistemaCapacitaciones
             this.Menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.Menu.Location = new System.Drawing.Point(0, 0);
             this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(203, 562);
+            this.Menu.Size = new System.Drawing.Size(203, 556);
             this.Menu.TabIndex = 0;
-            // 
-            // logo
-            // 
-            this.logo.Controls.Add(this.btnInicio);
-            this.logo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.logo.Location = new System.Drawing.Point(0, 0);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(203, 140);
-            this.logo.TabIndex = 1;
-            // 
-            // panelBarraT
-            // 
-            this.panelBarraT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
-            this.panelBarraT.Controls.Add(this.lblcargo);
-            this.panelBarraT.Controls.Add(this.lblnombre);
-            this.panelBarraT.Controls.Add(this.lblTitulo);
-            this.panelBarraT.Controls.Add(this.iconFormActual);
-            this.panelBarraT.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBarraT.Location = new System.Drawing.Point(203, 0);
-            this.panelBarraT.Name = "panelBarraT";
-            this.panelBarraT.Size = new System.Drawing.Size(745, 75);
-            this.panelBarraT.TabIndex = 1;
-            this.panelBarraT.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraT_MouseDown);
-            // 
-            // lblcargo
-            // 
-            this.lblcargo.AutoSize = true;
-            this.lblcargo.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcargo.ForeColor = System.Drawing.Color.White;
-            this.lblcargo.Location = new System.Drawing.Point(477, 41);
-            this.lblcargo.Name = "lblcargo";
-            this.lblcargo.Size = new System.Drawing.Size(64, 24);
-            this.lblcargo.TabIndex = 3;
-            this.lblcargo.Text = "Cargo";
-            this.lblcargo.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // lblnombre
-            // 
-            this.lblnombre.AutoSize = true;
-            this.lblnombre.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblnombre.ForeColor = System.Drawing.Color.White;
-            this.lblnombre.Location = new System.Drawing.Point(155, 41);
-            this.lblnombre.Name = "lblnombre";
-            this.lblnombre.Size = new System.Drawing.Size(82, 24);
-            this.lblnombre.TabIndex = 2;
-            this.lblnombre.Text = "Nombre";
-            this.lblnombre.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.lblnombre.Click += new System.EventHandler(this.lblnombre_Click);
-            // 
-            // lblTitulo
-            // 
-            this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Font = new System.Drawing.Font("Perpetua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lblTitulo.Location = new System.Drawing.Point(70, 26);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(40, 18);
-            this.lblTitulo.TabIndex = 1;
-            this.lblTitulo.Text = "Inicio";
-            // 
-            // PanelSombra
-            // 
-            this.PanelSombra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
-            this.PanelSombra.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelSombra.Location = new System.Drawing.Point(203, 75);
-            this.PanelSombra.Name = "PanelSombra";
-            this.PanelSombra.Size = new System.Drawing.Size(745, 9);
-            this.PanelSombra.TabIndex = 2;
-            // 
-            // PanelEscritorio
-            // 
-            this.PanelEscritorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(45)))), ((int)(((byte)(62)))));
-            this.PanelEscritorio.Controls.Add(this.lblFecha);
-            this.PanelEscritorio.Controls.Add(this.lblHora);
-            this.PanelEscritorio.Controls.Add(this.gunaPictureBox1);
-            this.PanelEscritorio.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PanelEscritorio.Location = new System.Drawing.Point(203, 84);
-            this.PanelEscritorio.Name = "PanelEscritorio";
-            this.PanelEscritorio.Size = new System.Drawing.Size(745, 478);
-            this.PanelEscritorio.TabIndex = 3;
-            this.PanelEscritorio.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelEscritorio_Paint);
-            // 
-            // lblFecha
-            // 
-            this.lblFecha.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.ForeColor = System.Drawing.Color.White;
-            this.lblFecha.Location = new System.Drawing.Point(13, 445);
-            this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(62, 24);
-            this.lblFecha.TabIndex = 5;
-            this.lblFecha.Text = "Fecha";
-            // 
-            // lblHora
-            // 
-            this.lblHora.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblHora.AutoSize = true;
-            this.lblHora.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHora.ForeColor = System.Drawing.Color.White;
-            this.lblHora.Location = new System.Drawing.Point(344, 445);
-            this.lblHora.Name = "lblHora";
-            this.lblHora.Size = new System.Drawing.Size(56, 24);
-            this.lblHora.TabIndex = 4;
-            this.lblHora.Text = "Hora";
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
-            // 
-            // gunaPictureBox1
-            // 
-            this.gunaPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.ImageRotate = 0F;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(116, 0);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(498, 408);
-            this.gunaPictureBox1.TabIndex = 1;
-            this.gunaPictureBox1.TabStop = false;
-            this.gunaPictureBox1.UseTransparentBackground = true;
-            // 
-            // iconFormActual
-            // 
-            this.iconFormActual.BackColor = System.Drawing.Color.Transparent;
-            this.iconFormActual.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconFormActual.IconColor = System.Drawing.Color.White;
-            this.iconFormActual.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconFormActual.IconSize = 47;
-            this.iconFormActual.Location = new System.Drawing.Point(17, 14);
-            this.iconFormActual.Name = "iconFormActual";
-            this.iconFormActual.Size = new System.Drawing.Size(47, 51);
-            this.iconFormActual.TabIndex = 0;
-            this.iconFormActual.TabStop = false;
             // 
             // btnCerrar
             // 
@@ -314,6 +179,15 @@ namespace SistemaCapacitaciones
             this.btnUsuarios.UseVisualStyleBackColor = true;
             this.btnUsuarios.Click += new System.EventHandler(this.iconButton1_Click);
             // 
+            // logo
+            // 
+            this.logo.Controls.Add(this.btnInicio);
+            this.logo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.logo.Location = new System.Drawing.Point(0, 0);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(203, 140);
+            this.logo.TabIndex = 1;
+            // 
             // btnInicio
             // 
             this.btnInicio.BackColor = System.Drawing.Color.Transparent;
@@ -330,11 +204,137 @@ namespace SistemaCapacitaciones
             this.btnInicio.UseTransparentBackground = true;
             this.btnInicio.Click += new System.EventHandler(this.gunaPictureBox1_Click);
             // 
+            // panelBarraT
+            // 
+            this.panelBarraT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
+            this.panelBarraT.Controls.Add(this.lblcargo);
+            this.panelBarraT.Controls.Add(this.lblnombre);
+            this.panelBarraT.Controls.Add(this.lblTitulo);
+            this.panelBarraT.Controls.Add(this.iconFormActual);
+            this.panelBarraT.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBarraT.Location = new System.Drawing.Point(203, 0);
+            this.panelBarraT.Name = "panelBarraT";
+            this.panelBarraT.Size = new System.Drawing.Size(857, 75);
+            this.panelBarraT.TabIndex = 1;
+            this.panelBarraT.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBarraT_MouseDown);
+            // 
+            // lblcargo
+            // 
+            this.lblcargo.AutoSize = true;
+            this.lblcargo.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcargo.ForeColor = System.Drawing.Color.White;
+            this.lblcargo.Location = new System.Drawing.Point(477, 41);
+            this.lblcargo.Name = "lblcargo";
+            this.lblcargo.Size = new System.Drawing.Size(64, 24);
+            this.lblcargo.TabIndex = 3;
+            this.lblcargo.Text = "Cargo";
+            this.lblcargo.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblnombre
+            // 
+            this.lblnombre.AutoSize = true;
+            this.lblnombre.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnombre.ForeColor = System.Drawing.Color.White;
+            this.lblnombre.Location = new System.Drawing.Point(155, 41);
+            this.lblnombre.Name = "lblnombre";
+            this.lblnombre.Size = new System.Drawing.Size(82, 24);
+            this.lblnombre.TabIndex = 2;
+            this.lblnombre.Text = "Nombre";
+            this.lblnombre.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lblnombre.Click += new System.EventHandler(this.lblnombre_Click);
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Perpetua", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.lblTitulo.Location = new System.Drawing.Point(70, 26);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(40, 18);
+            this.lblTitulo.TabIndex = 1;
+            this.lblTitulo.Text = "Inicio";
+            // 
+            // iconFormActual
+            // 
+            this.iconFormActual.BackColor = System.Drawing.Color.Transparent;
+            this.iconFormActual.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.iconFormActual.IconColor = System.Drawing.Color.White;
+            this.iconFormActual.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconFormActual.IconSize = 47;
+            this.iconFormActual.Location = new System.Drawing.Point(17, 14);
+            this.iconFormActual.Name = "iconFormActual";
+            this.iconFormActual.Size = new System.Drawing.Size(47, 51);
+            this.iconFormActual.TabIndex = 0;
+            this.iconFormActual.TabStop = false;
+            // 
+            // PanelSombra
+            // 
+            this.PanelSombra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(32)))), ((int)(((byte)(71)))));
+            this.PanelSombra.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelSombra.Location = new System.Drawing.Point(203, 75);
+            this.PanelSombra.Name = "PanelSombra";
+            this.PanelSombra.Size = new System.Drawing.Size(857, 9);
+            this.PanelSombra.TabIndex = 2;
+            // 
+            // PanelEscritorio
+            // 
+            this.PanelEscritorio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(45)))), ((int)(((byte)(62)))));
+            this.PanelEscritorio.Controls.Add(this.lblFecha);
+            this.PanelEscritorio.Controls.Add(this.lblHora);
+            this.PanelEscritorio.Controls.Add(this.gunaPictureBox1);
+            this.PanelEscritorio.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelEscritorio.Location = new System.Drawing.Point(203, 84);
+            this.PanelEscritorio.Name = "PanelEscritorio";
+            this.PanelEscritorio.Size = new System.Drawing.Size(857, 472);
+            this.PanelEscritorio.TabIndex = 3;
+            this.PanelEscritorio.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelEscritorio_Paint);
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.ForeColor = System.Drawing.Color.White;
+            this.lblFecha.Location = new System.Drawing.Point(69, 442);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(62, 24);
+            this.lblFecha.TabIndex = 5;
+            this.lblFecha.Text = "Fecha";
+            // 
+            // lblHora
+            // 
+            this.lblHora.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblHora.AutoSize = true;
+            this.lblHora.Font = new System.Drawing.Font("Perpetua", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.ForeColor = System.Drawing.Color.White;
+            this.lblHora.Location = new System.Drawing.Point(400, 442);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(56, 24);
+            this.lblHora.TabIndex = 4;
+            this.lblHora.Text = "Hora";
+            // 
+            // gunaPictureBox1
+            // 
+            this.gunaPictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
+            this.gunaPictureBox1.ImageRotate = 0F;
+            this.gunaPictureBox1.Location = new System.Drawing.Point(172, -3);
+            this.gunaPictureBox1.Name = "gunaPictureBox1";
+            this.gunaPictureBox1.Size = new System.Drawing.Size(498, 408);
+            this.gunaPictureBox1.TabIndex = 1;
+            this.gunaPictureBox1.TabStop = false;
+            this.gunaPictureBox1.UseTransparentBackground = true;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(948, 562);
+            this.ClientSize = new System.Drawing.Size(1060, 556);
             this.Controls.Add(this.PanelEscritorio);
             this.Controls.Add(this.PanelSombra);
             this.Controls.Add(this.panelBarraT);
@@ -345,13 +345,13 @@ namespace SistemaCapacitaciones
             this.Load += new System.EventHandler(this.Principal_Load);
             this.Menu.ResumeLayout(false);
             this.logo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.btnInicio)).EndInit();
             this.panelBarraT.ResumeLayout(false);
             this.panelBarraT.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconFormActual)).EndInit();
             this.PanelEscritorio.ResumeLayout(false);
             this.PanelEscritorio.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconFormActual)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnInicio)).EndInit();
             this.ResumeLayout(false);
 
         }
