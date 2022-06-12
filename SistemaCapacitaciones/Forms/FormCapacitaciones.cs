@@ -15,6 +15,7 @@ namespace SistemaCapacitaciones.Forms
     {
         D_usuario objUsuario = new D_usuario();
         string Operacion = "Insertar";
+        string IdCapacitacion;
         public FormCapacitaciones()
         {
             InitializeComponent();
@@ -74,25 +75,74 @@ namespace SistemaCapacitaciones.Forms
                 txtEnte.Clear();
                 txtEstado.Clear();
                 txtHoras.Clear();
-                ListarCapacitaciones();
             }
-            /*else if (Operacion == "Editar")
+            else if (Operacion == "Editar")
             {
-                objUsuario.EditarUsuario(Convert.ToInt32(IdUsuario),
-                    Convert.ToInt32(cmbIdEmpleado.SelectedValue),
-                    txtUsuario.Text,
-                    txtPass.Text);
-                MessageBox.Show("Se edito Correctamente");
+                objUsuario.EditarCapacitacion(
+                    Convert.ToInt32(IdCapacitacion),
+                    Convert.ToInt32(cmbIdUsuario.SelectedValue),
+                    Convert.ToInt32(cmbIdFinanciacion.SelectedValue),
+                    Convert.ToInt32(cmbIdModalidad.SelectedValue),
+                    txtCapacitacion.Text,
+                    txtDescripcion.Text,
+                    txtEnte.Text,
+                    txtEstado.Text,
+                    dtInicio.Value.ToString("yyyyMMdd"),
+                    dtFinal.Value.ToString("yyyyMMdd"),
+                    txtHoras.Text);
+                MessageBox.Show("Editado satisfactoriamente");
                 Operacion = "Insertar";
-                txtUsuario.Clear();
-                txtPass.Clear();
-            } */
-            //ListarCapacitacion();
+                txtCapacitacion.Clear();
+                txtDescripcion.Clear();
+                txtEnte.Clear();
+                txtEstado.Clear();
+                txtHoras.Clear();
+            } 
+            ListarCapacitaciones();
         }
 
         private void ListarCapacitaciones()
         {
             dataGridView1.DataSource = objUsuario.ListarCapacitaciones();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                Operacion = "Editar";
+                cmbIdUsuario.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                cmbIdFinanciacion.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+                cmbIdModalidad.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+                txtCapacitacion.Text = dataGridView1.CurrentRow.Cells[4].Value.ToString();
+                txtDescripcion.Text = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+                txtEnte.Text = dataGridView1.CurrentRow.Cells[6].Value.ToString();
+                txtEstado.Text = dataGridView1.CurrentRow.Cells[7].Value.ToString();
+                dtInicio.Text = dataGridView1.CurrentRow.Cells[8].Value.ToString();
+                dtFinal.Text = dataGridView1.CurrentRow.Cells[9].Value.ToString();
+                txtHoras.Text = dataGridView1.CurrentRow.Cells[10].Value.ToString();
+                IdCapacitacion = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            }
+            else
+                MessageBox.Show("Debe seleccionar una fila");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                objUsuario.EliminarCapacitacion(Convert.ToInt32(dataGridView1.CurrentRow.Cells[0].Value));
+                MessageBox.Show("Se elimino satisfactoriamente");
+                ListarCapacitaciones();
+                Operacion = "Insertar";
+                txtCapacitacion.Clear();
+                txtDescripcion.Clear();
+                txtEnte.Clear();
+                txtEstado.Clear();
+                txtHoras.Clear();
+            }
+            else
+                MessageBox.Show("Selecciones una fila");
         }
     }
     
