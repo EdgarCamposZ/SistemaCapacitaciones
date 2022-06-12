@@ -104,9 +104,9 @@ namespace SistemaCapacitaciones
         private void iconButton2_Click(object sender, EventArgs e)
         {
             Activarboton(sender, Color.FromArgb(233, 177, 240));
-            AbrirFormHijo(new FormEmpleado());
+            AbrirFormHijo(new FormEmpleadoss());
         }
-        
+
         private void iconButton3_Click(object sender, EventArgs e)
         {
             Activarboton(sender, Color.FromArgb(222, 166, 155));
@@ -115,7 +115,6 @@ namespace SistemaCapacitaciones
         private void iconButton4_Click(object sender, EventArgs e)
         {
             Activarboton(sender, Color.FromArgb(27, 181, 242));
-            AbrirFormHijo(new FormCapacitaciones());
         }
 
         private void gunaPictureBox1_Click(object sender, EventArgs e)
@@ -203,21 +202,6 @@ namespace SistemaCapacitaciones
         }
 
         private void lblnombre_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblcargo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelBarraT_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void iconFormActual_Click(object sender, EventArgs e)
         {
 
         }

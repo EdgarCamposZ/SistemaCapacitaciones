@@ -68,6 +68,8 @@ namespace capaDatos
             Conexion.AbrirConexion();
             return Tabla;
         }
+<<<<<<< HEAD
+=======
         public void EditarUsuario(int IdUsuario, int IdEmpleado, string Usuario, string Pass)
         {
             Comando.Connection = Conexion.AbrirConexion();
@@ -150,6 +152,38 @@ namespace capaDatos
             Conexion.AbrirConexion();
             return Tabla;
         }
+
+        public void EditarCapacitacion(int IdCapacitacion, int IdUsuario, int IdFinanciacion, int IdModalidad, string Capacitacion, string Descripcion, string EnteFormador, string Estado, string FechaInicio, string FechaFinal, string CantHoras)
+        {
+            Comando.Connection = Conexion.AbrirConexion();
+            Comando.CommandText = "EditarCapacitacion";
+            Comando.CommandType = CommandType.StoredProcedure;
+            Comando.Parameters.AddWithValue("@IdCapacitacion", IdCapacitacion);
+            Comando.Parameters.AddWithValue("@IdUsuario", IdUsuario);
+            Comando.Parameters.AddWithValue("@IdFinanciacion", IdFinanciacion);
+            Comando.Parameters.AddWithValue("@IdModalidad", IdModalidad);
+            Comando.Parameters.AddWithValue("@Capacitacion", Capacitacion);
+            Comando.Parameters.AddWithValue("@Descripcion", Descripcion);
+            Comando.Parameters.AddWithValue("@EnteFormador", EnteFormador);
+            Comando.Parameters.AddWithValue("@Estado", Estado);
+            Comando.Parameters.AddWithValue("@FechaInicio", FechaInicio);
+            Comando.Parameters.AddWithValue("@FechaFinal", FechaFinal);
+            Comando.Parameters.AddWithValue("@CantHoras", CantHoras);
+            Comando.ExecuteNonQuery();
+            Comando.Parameters.Clear();
+        }
+
+        public void EliminarCapacitacion(int IdCapacitacion)
+        {
+            Comando.Connection = Conexion.AbrirConexion();
+            Comando.CommandText = "KillCapacitacion";
+            Comando.CommandType = CommandType.StoredProcedure;
+            Comando.Parameters.AddWithValue("@IdCapacitacion", IdCapacitacion);
+            Comando.ExecuteNonQuery();
+            Conexion.CerrarConexion();
+            Comando.Parameters.Clear();
+        }
+>>>>>>> 0553250b907575677fe9dcd83a6b54471bb8895d
     }
     
 }
